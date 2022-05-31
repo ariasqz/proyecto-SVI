@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    width: 100%;
+    height: 80px;
+    background-color: aqua;
+    margin: 0 auto;
+}
+.navbar nav {
+    background-color: grey;
+    width: 100%;
+}
+
+.navbar nav ul {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    padding-top: 12px;
+    padding-right: 80px;
+}
