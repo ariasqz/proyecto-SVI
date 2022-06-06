@@ -8,6 +8,7 @@
 .navbar nav {
     background-color: grey;
     width: 100%;
+    height: 100%;
 }
 
 .navbar nav ul {
@@ -19,5 +20,109 @@
 
 .navbar nav ul li {
     padding-top: 12px;
-    padding-right: 80px;
+    padding-right: 30px;
+    height: 100%;
+    margin-right: 90px;
+}
+
+.navbar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+}
+.navbar nav ul li:hover {
+    background-color: #636262 ;
+}
+
+
+.modal {
+    z-index: 99;
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    --pointer: none;
+    opacity: var(--opacity);
+    transition: opacity .5s;
+}
+
+.modal:target {
+    --opacity: 1;
+    --pointer: unset;
+}
+
+.modal .modal_container {
+    margin: auto;
+    background-color: gray;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    overflow: hidden;
+    text-align: center;
+    padding: 2.5em 1.5em;
+    border-radius: 1em;
+}
+
+.modal:target .modal_container {
+    animation: show 1s .5s backwards;
+
+}
+
+@keyframes show {
+    0%{
+        transform: translateY(-150vh);
+    }
+    100%{
+
+    }
+}
+
+.modal .modal_container .modal_picture {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-bottom: 2em;
+}
+
+.modal .modal_container .modal_picture .modal_img {
+    width: 100%;
+    display: block;
+
+}
+
+.modal .modal_container .modal_title {
+    font-size: 2.5em;
+    font-weight: 500;  
+}
+
+.modal .modal_container .modal_title .modal_title--bold {
+    font-weight: 700;
+}
+
+.modal .modal_container .modal_parrafo {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    line-height: 1.5;
+}
+
+.modal .modal_container .modal_close {
+    display: inline-block;
+    border: 2px solid;
+    background-color: #2266c8;
+    padding: 1em 2em;
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    border-color: #2266c8;
+    border-radius: .4em;
+}
+
+@media (max-width:600px) {
+    .modal_title {
+        font-size: 1.7rem;
+    }
 }
