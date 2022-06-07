@@ -1,40 +1,75 @@
-.navbar {
-    display: flex;
-    width: 100%;
-    height: 80px;
-    background-color: aqua;
-    margin: 0 auto;
-}
-.navbar nav {
-    background-color: grey;
-    width: 100%;
-    height: 100%;
+:root {
+    --text-xs: 0.75rem;
+    --text-sm: 1.4rem;
+    --text-md: 1.5rem;
+    --text-lg: 2rem;
+    --text-xl: 3rem;
 }
 
-.navbar nav ul {
-    justify-content: center;
+
+.navbar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.navbar .contenedor .caja-navbar {
+
     display: flex;
+    justify-content: space-around;
+
+}
+.navbar .contenedor .caja-navbar .logo-santander {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.navbar .contenedor .caja-navbar .logo-santander img {
+    height: 70%;
+    margin-left: 10px;
+    border-radius: 10px 10px;
+    
+}
+
+.navbar .contenedor .caja-navbar nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.navbar .contenedor .caja-navbar nav ul {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
-.navbar nav ul li {
-    padding-top: 12px;
-    padding-right: 30px;
-    height: 100%;
-    margin-right: 90px;
+.navbar .contenedor .caja-navbar nav ul li {
+    padding: 12px 12px;
 }
 
-.navbar nav ul li a {
-    color: #fff;
+
+
+.navbar .contenedor .caja-navbar nav ul li:hover {
+    background-color: #D5D8DC ;
+}
+
+.navbar .contenedor .caja-navbar nav ul li a {
     text-decoration: none;
-    font-size: 25px;
-    text-align: center;
-}
-.navbar nav ul li:hover {
-    background-color: #636262 ;
+    color: black;
+    font-size: var(--text-sm);
 }
 
+.navbar .contenedor .caja-navbar nav ul li a:hover{
+    color: var(--subHeaderColor);
+}
 
 .modal {
     z-index: 99;
