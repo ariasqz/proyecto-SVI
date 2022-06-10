@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <link rel="stylesheet" href="./css/normalize.css">
-    <title>Proyecto 🙂</title>
+    <title>Login</title>
 </head>
 <body>
-    <section id="modal" class="modal">
-        <div class="modal_container">
-            <h2 class="modal_title"> Inicia sesion
-                <span class="modal_title modal_title--bold">Bienvenido</span>
-            </h2>
-            <p>Nombre: <input type="text"></p> 
-            <p>contraseña: <input type="password"></p>
-            <p class="modal_parrafo">Bienvenido a esta maravillosa pagina web </p> <br>
-            <a href="principal.html" class="modal_close">Aceptar</a>
+    <div class="contenedor-login">
+        <div class="contenedor-informacion">
+            <h1 class="title">Bienvenido</h1>
+            <p>inicia Sesion</p>
+            <form class="contenedor-inputs">
+                <input class="input" type="text" placeholder="Usuario">
+                <input class="input" type="password" placeholder="Contraseña">
+                <button class="button" onclick="location.href='./principal.html'">Login</button>
+                <p>¿No tienes cuenta? <span class="span">Registrate</span></p>
+            </form>
         </div>
-    </section>
+        <img class="contenedor-imagen" src="./img/Logo prueba TVC.png" alt="logo">
+    </div>
+    
 </body>
 </html>
