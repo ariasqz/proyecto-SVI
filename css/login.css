@@ -79,13 +79,25 @@ body {
     border: 2px solid var(--title-bg);
 }
 
+.url {
+    width: 80%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background-color: var(--title-bg);
+    cursor: pointer;
+    border: none;
+}
+
 .button {
     width: 80%;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #fff;
     border-radius: 5px;
-    background-color: var(--title-bgt);
+    border: none;
+    background-color: var(--title-bg);
     cursor: pointer;
 }
 
@@ -94,7 +106,7 @@ body {
 }
 
 .span{
-    color: var(--light-pink);
+    color: var(--title-bg);
     font-weight: 600; 
     cursor: pointer;
 }
