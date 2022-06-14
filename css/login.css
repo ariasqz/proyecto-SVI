@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-    --login-bg: #f8f3ff;
-    --title-bg: #80624D;
+    --login-bg: #ffffff;
+    --title-bg: #f51955;
     --buton-bg: #674baf;
     --light-pink: #e882e8;
+    --Azul: #1EAEE6;
+    --Naranjaclaro: #F5470D;
+    --Naranjaoscuro: #E05C00;
+    --Fuscia: #F51955;
+    --Morado: #7A09EB;
 }
 
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to top, #A07C63 0.5%, #F1D9C9 100%);
+    background-image: linear-gradient(to top, #7A09EB  0.5%, #F1D9C9 100%);
 }
 
 .contenedor-login {
-    height: 43.75em;
-    width: 60em;
+    height: 493px ;
+    width: 1028px;
     margin: 6em auto;
     display: flex;
     justify-content: space-between;
@@ -34,8 +39,11 @@ body {
 }
 
 .contenedor-imagen {
-    width: 50%;
+    width: 514px;
+    height: 493px;
 }
+
+
 
 .title {
     text-transform: capitalize;
@@ -79,25 +87,13 @@ body {
     border: 2px solid var(--title-bg);
 }
 
-.url {
-    width: 80%;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #fff;
-    border-radius: 5px;
-    background-color: var(--title-bg);
-    cursor: pointer;
-    border: none;
-}
-
 .button {
-    width: 80%;
+    width: 300%;
     letter-spacing: 1px;
     text-transform: uppercase;
-    color: #fff;
+    color: rgb(6, 6, 6);
     border-radius: 5px;
-    border: none;
-    background-color: var(--title-bg);
+    background-color: var(--title-bgt);
     cursor: pointer;
 }
 
@@ -106,7 +102,7 @@ body {
 }
 
 .span{
-    color: var(--title-bg);
+    color: var(--light-pink);
     font-weight: 600; 
     cursor: pointer;
 }

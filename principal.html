@@ -1,80 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    <title>Proyecto 🙂</title>
+	<meta charset="UTF-8">
+	<title>Menù Lateral con Css</title>
+	<link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <section class="navbar">
-        <div class="contenedor">
-            <div class="caja-navbar">
-                <div class="logo-santander">
-                    <img src="./img/solologo.png" width="102px" height="60" alt="">
-                    
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Menu</a> </li>
-                        <li><a href="#">Mapa</a></li>
-                        <li><a href="#">Acerca de</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </section>
-   
-    <nav id="navm">
-        <span id="open-close"><i class='bx bx-menu'></i></span>
-    </nav>
-    <aside id="aside">
-        <div class="container-svg">
-            <div>
-               <span><i class='bx bx-stats' ></i> <a href="#">Estadisticas</a> </span>
-            </div>
-            <div>
-                <span><i class='bx bx-library'></i> <a href="#">Boletines</a> </span>
-            </div>
-           
-        </div>
-            
-
-            <li class="list__item list__item--click">
-                <div class="list__button list__button--click">
-                    <span><i class='bx bxs-map-pin' ></i></span>
-                    <a class="nav__link">Sectores</a>
-                    <span><i class='bx bx-chevron-right'></i></span>
-                </div>
-
-                <ul class="list__show">
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Villa Olimpica</a>
-                    </li>
-
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Centro</a>
-                    </li>
-
-                    <li class="list__inside">
-                        <a href="#" class="nav__link nav__link--inside">Coovip</a>
-                    </li>
-                </ul>
-
-
-            </div>
-           
+	<header class="header">
+		<div class="container">
+		<div class="btn-menu">
+			<label for="btn-menu">☰</label>
+		</div>
+			<div class="logo">
+				<img src="./img/TCV (2).png" width="120px" height="70px">
+			</div>
+			<nav class="menu">
                 
-        
-      
-        </div>
-    </aside>
-    <script src="js/script.js"></script>
-</body>
-</html>
+				<a href="#"><img src="img/lupa.png" width="20px" height="25px"></a>
+				<a href="#">Contacto</a>
+			</nav>
+		</div>
+	</header>
+	<div class="capa"></div>
+<!--	--------------->
+<input type="checkbox" id="btn-menu">
+<div class="container-menu">
+	<div class="cont-menu">
+		<nav>
+			<a href="#">Estadistica</a>
+			<a href="#">Sectores</a>
+			<a href="#">Boletines</a>
+		</nav>
+		<label for="btn-menu">✖️</label>
+	</div>
+</div>
+<div class="zona-mapa">
+    <div class="violencia"></div>
+    <select name="violencia" id="violencia">
+        <optgroup label="General">
+           <option value="Sexual">Sexual</option>
+           <option value="Intrafamiliar">Intrafamiliar</option>
+           <option value="callejera">Callejera</option>
+        </optgroup>
+      </select>
+		<a href="#">SAN GIL</a>
+
+        <img width="500px" height="500px" src="img/WhatsApp Image 2022-06-13 at 4.12.15 PM.jpeg" alt="">
+    </div>
+
+
+
+</div>
 </body>
 </html>

@@ -1,25 +1,29 @@
-const $openClose = document.getElementById("open-close"),
-      $aside = document.getElementById("aside");
+let navbar = document.querySelector('.navbar');
 
-$openClose.addEventListener("click",()=>{
-    $aside.classList.toggle("desplegar")
-})
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
 
+let searchForm = document.querySelector('.search-form');
 
-let listElements = document.querySelectorAll('.list__button--click');
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    navbar.classList.remove('active');
+    cartItem.classList.remove('active');
+}
 
-listElements.forEach(listElement => {
-    listElement.addEventListener('click', ()=>{
-        
-        listElement.classList.toggle('arrow');
+let cartItem = document.querySelector('.cart-items-container');
 
-        let height = 0;
-        let menu = listElement.nextElementSibling;
-        if(menu.clientHeight == "0"){
-            height=menu.scrollHeight;
-        }
+document.querySelector('#cart-btn').onclick = () =>{
+    cartItem.classList.toggle('active');
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+}
 
-        menu.style.height = `${height}px`;
-
-    })
-});
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+    searchForm.classList.remove('active');
+    cartItem.classList.remove('active');
+}
