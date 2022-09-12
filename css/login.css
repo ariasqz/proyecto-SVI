@@ -1,31 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-    --login-bg: #ffffff;
-    --title-bg: #f51955;
+    --login-bg: #f8f3ff;
+    --title-bg: #80624D;
     --buton-bg: #674baf;
     --light-pink: #e882e8;
-    --Azul: #1EAEE6;
-    --Naranjaclaro: #F5470D;
-    --Naranjaoscuro: #E05C00;
-    --Fuscia: #F51955;
-    --Morado: #7A09EB;
 }
 
 body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background-image: linear-gradient(to top, #7A09EB  0.5%, #F1D9C9 100%);
+}
+.header img{
+    width: 100%;
+}
+
+.header h1{
+    font-size: 80px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
 }
 
 .contenedor-login {
-    height: 493px ;
-    width: 1028px;
-    margin: 6em auto;
+    height: 500px;
+    width: 800px;
+    margin: -60px auto;
     display: flex;
     justify-content: space-between;
     border-radius:10px;
     overflow: hidden;
+    box-shadow: 5px 8px 12px black;
+    transition: all 0.4s ease-in-out;
+}
+.contenedor-login:hover {
+    transform: scale(1.1);
+    box-shadow: 13px 15px 37px black;
+
 }
 
 .contenedor-informacion {
@@ -39,11 +51,9 @@ body {
 }
 
 .contenedor-imagen {
-    width: 514px;
-    height: 493px;
+    width: 50%;
+    background-image: linear-gradient(to top, #A07C63 0.5%, #F1D9C9 100%);
 }
-
-
 
 .title {
     text-transform: capitalize;
@@ -88,11 +98,10 @@ body {
 }
 
 .button {
-    width: 300%;
+    width: 80%;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgb(6, 6, 6);
     border-radius: 5px;
+    padding-right: 25px;
     background-color: var(--title-bgt);
     cursor: pointer;
 }
