@@ -2,7 +2,7 @@
 
 :root {
     --login-bg: #f8f3ff;
-    --title-bg: #80624D;
+    --title-bg: #F5A70D;
     --buton-bg: #674baf;
     --light-pink: #e882e8;
 }
@@ -11,12 +11,20 @@ body {
     height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
-.header img{
-    width: 100%;
-}
 
+.header img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    width: 100%;
+    transition: 2s;
+    
+}
+.header img: {
+    transform: translateY(-30%);
+    filter: brightness(80%);
+
+}
 .header h1{
-    font-size: 80px;
+    font-size: 5vw;
     position: absolute;
     top: 40%;
     left: 40%;
@@ -24,20 +32,12 @@ body {
 }
 
 .contenedor-login {
-    height: 500px;
-    width: 800px;
+    height: 550px;
+    width: 1200px;
     margin: -60px auto;
     display: flex;
     justify-content: space-between;
-    border-radius:10px;
     overflow: hidden;
-    box-shadow: 5px 8px 12px black;
-    transition: all 0.4s ease-in-out;
-}
-.contenedor-login:hover {
-    transform: scale(1.1);
-    box-shadow: 13px 15px 37px black;
-
 }
 
 .contenedor-informacion {
@@ -52,12 +52,12 @@ body {
 
 .contenedor-imagen {
     width: 50%;
-    background-image: linear-gradient(to top, #A07C63 0.5%, #F1D9C9 100%);
+    background-image: linear-gradient(to top, #F5A70D 0.5%, #f3b68d 100%);
 }
 
 .title {
     text-transform: capitalize;
-    font-size: 2.25rem;
+    font-size: 3rem;
     font-weight: 600;
     letter-spacing: 1px;
     color: var(--title-bg);
@@ -101,17 +101,32 @@ body {
     width: 80%;
     letter-spacing: 1px;
     border-radius: 5px;
+    border: none;
     padding-right: 25px;
-    background-color: var(--title-bgt);
     cursor: pointer;
+    background-color: #F5A70D;
+}
+.button:hover {
+    box-shadow: 5px 8px 12px rgb(151, 150, 150);
+    transition: all 0.4s ease-in-out;
+    background-color: #f3b68d;
 }
 
 .contenedor-inputs p{
     margin: 0;
 }
 
+.contenedor-inputs a{
+    text-decoration: none;
+    color: #F5A70D;
+    margin-left: 5px;
+}
+
+.contenedor-inputs a:hover{
+    color: black;
+}
 .span{
-    color: var(--light-pink);
+    text-decoration: none;
     font-weight: 600; 
     cursor: pointer;
 }
