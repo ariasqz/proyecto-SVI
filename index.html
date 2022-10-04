@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <title>proyecto_SRSVI</title>
-    <link rel="icon" href="./img/logo_oficial.png">
-</head>
-<body>
-    <div class="header">
-        <div class="fondooscuro"></div>
-        <img src="./img/pruebaheader.jpg" alt="header">
-        <h1>BIENVENIDOS A SRSVI</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SVI</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa:700"
+      rel="stylesheet"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="icon" href="./img/logo_oficial.png" />
+  </head>
+  <body>
+    <div id="loading">
+      <div id="spinner"></div>
     </div>
-    <div class="contenedor-login">
-        <div class="contenedor-informacion">
-            <h1 class="title">Bienvenido</h1>
-            <p style="font-size: 1.2rem ;">Inicia Sesión</p>
-            <form class="contenedor-inputs">
-                <input class="input" type="text" placeholder="Usuario">
-                <input class="input" type="password" placeholder="Contraseña">
-                <a class="url" href="menu.html"><input class="button" type="button" value="Aceptar"></a>
-                <p>¿No tienes cuenta? <span class="span"><a href="registro.html">Registrate</a></span></p>
-            </form>
+    <div id="header" class="animated slideInDown" style="animation-delay: 1.8s">
+      <div id="title">Proyecto SVI</div>
+      <br />
+      <div id="links">
+        <a href="#skills">Problema</a>
+        <a href="#work" style="margin: 0px 60px">Objetivo general</a>
+        <a href="#contact">Contacto</a>
+      </div>
+    </div>
+
+    <center>
+      <div id="middle">
+        <div id="tagline" class="animated zoomIn" style="animation-delay: 1.8s">
+          Bienvenidos a sistema de registro y seguimiendo de violencia
+          intrafamiliar (SVI)<br />
+          <button class="btn_one">Ingresar</button>
         </div>
-        <img class="contenedor-imagen" src="./img/logo_oficial.png" alt="logo" >
+      </div>
+    </center>
+
+    <div id="portfolio">
+      <div id="skills">
+        <h1>Problema</h1>
+        <div class="contenido_problema">
+          <p style="padding-right: 50px; margin-top: 10vh;">
+            La violencia intrafamiliar es un problema que afecta a muchas
+            familias sangileñas. En estos casos los pensamientos de "no poder
+            sentirse seguro, no saber a quien acudir, no saber si denunciar o
+            no" forman parte de los problemas de convivencia ciudadana del
+            municipio. A pesar de esto, los ciudadanos de San Gil no cuentan con
+            una herramienta tecnologica que les permita registrar y hacer
+            seguimiento sobre los casos de violencia intrafamiliar que se dan en
+            sus sectores. Al no tener un debido seguimiento de este problema, no
+            se pueden desarrollar estrategias efectivas que ayuden a tratar los
+            sectores mas vulnerables a este tipo de violencia.
+          </p>
+          <img src="./img/conflicto.png" alt="conflicto" style="  width: 100%; max-width: 500px; height: auto;"/>
+        </div>
+      </div>
+
+      <div id="work">
+        <h1>Objetivo general</h1>
+        <div class="project">
+          <div>
+            <img src="./img/kpi.png" alt="indices" style="  width: 100%; max-width: 500px; height: auto;"/>
+            Construir un prototipo de software que permite hacer registro y
+            seguimiento de las violencia intrafamiliar en el municipio de San
+            Gil, al mismo tiempo que genere un mapa de calor que permitan
+            detectar los indices de volencia intrafamiliar en los diferentes
+            sectores.
+          </div>
+        </div>
+
+        <div class="project">
+          <h2>Solución</h2>
+          <div>
+            Sistema de registro y seguimiendo de violencia intrafamiliar
+            (SVI), servirá a los Sangileños, respetando el derecho a la
+            privacidad, como herramienta tecnológica para que puedan registrar
+            y seguir la violencia intrafamiliar. Y que sirva tanto a las
+            autoridades municipales como a los ciudadanos como herramienta
+            para diseñar y adelantar estrategias y acciones que permitan
+            disminuir los indices de violencias en el municipio.
+            <img src="./img/sistemas.png" alt="sistemas" style="width: 100%; max-width: 500px; height: auto;"/>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
+    <script src="./js/index.js" type="text/javascript"></script>
+  </body>
 </html>
- 
