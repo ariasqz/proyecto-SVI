@@ -83,6 +83,7 @@ body,html {
     transition:1s ease-in-out;
     padding-top:20vh;
 }
+
 #tagline {
     font-size:50px;
     width:60%;
@@ -151,6 +152,7 @@ body,html {
     background:transparent;
     transition:0.4s ease-in-out;
     margin:30px 10px;
+    text-decoration: none;
 }
 .btn_one:hover {
     background:white;
