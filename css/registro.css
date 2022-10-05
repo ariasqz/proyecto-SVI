@@ -1,0 +1,257 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;
+}
+
+body {
+    background: #0f0f0f;
+    color: #fff;
+    line-height: 1.6;
+    font-family: 'Quicksand', sans-serif;
+    padding: 0 1.5em;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.logo {
+    text-align: center;
+    font-size: 2em;
+}
+
+.logo span {
+    color: #B70E21;
+}
+
+.contact-wrapper {
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper > * {
+    padding: .5em;
+}
+
+.contact-form {
+    background: #222222;
+    border-radius: 10px;
+    
+}
+
+.contact-form form {
+    display: contents;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form label {
+    display: block;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+
+
+.form-control {
+    position: relative;
+    margin: 20px 0 10px;
+    width: auto;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: rgb(32, 32, 32);
+}
+
+
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: 0;
+    border-bottom-color: rgb(117, 231, 106);
+}
+
+.form-control label {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    pointer-events: none;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 18px;
+    min-width: 5px;
+    color: rgb(238, 184, 184);
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: rgb(209, 186, 186);
+    transform: translateY(-30px);
+}
+
+
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #d63030;
+}
+
+
+button {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, #ce2222, #cc1c80, #8122c0, #2056ca);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+}
+
+@keyframes ani {
+    0% {
+        background-position: 0%;
+    }
+
+    100% {
+        background-position: 400%;
+    }
+}
+
+button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+
+button:hover::before {
+    filter: blur(20px);
+}
+
+button:active {
+    background: linear-gradient(32deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    background: #4b4b4b;
+    position: relative;
+    overflow: visible;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+    height: 40%;
+    background-image: url('../img/pruebaregistro.jpg');
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    border-radius: .5rem;
+    transition: .3s ease;
+}
+
+.card-info {
+    padding-top: 10%;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.card-button {
+    border: 1px solid #d6d5d5;
+    display: flex;
+    padding: .6em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    font-size: .7em;
+}
+
+
+.card-img:hover {
+    transform: translateY(-25%);
+    box-shadow: rgba(255, 209, 4, 0.596) 0px 13px 47px -5px, rgba(69, 236, 2, 0.651) 0px 8px 16px -8px;
+}
+
+.card-button:hover {
+    border: 1px solid #98be5a;
+    background-color: #dbe64f;
+}
+
+
+
+@media(min-width: 700px) {
+    body {
+        padding: 0 4em;
+    }
+
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .contact-wrapper>* {
+        padding: 2em;
+    }
+
+
+}
