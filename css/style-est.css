@@ -1,0 +1,294 @@
+:root{
+    --color_TorresdelCastillo: #3b5998;
+    --color_JoséAntonioGalán: #00acce;
+    --color_LaPlaya: #e95950;
+    --color_ElMalecon: #c8232c;
+    --color_SagradaFamilia: #008000;
+    --color_VillaOlimpica: #B51FD0;
+    --color_SanMartin: #500AE5;
+    --color_Santander: #3A3741;
+    --color_TerminalDeTransporte: #BA54B4;
+    --color_Carcel: #54BA71;
+    --color_Porvenir1: #54B8BA;
+    --color_Porvenir2: #AFBA54;
+    --color_PlazaDeFerias: #BA5454;
+    --color_BellaIsla: #5456BA;
+    --color_ParqueElGallineral: #FF0000;
+    --color_NuevoPabloVI: #000000;
+    --color_AltosDelGallineral: #FFFFFF;
+    --color_Altamira: #FF8000;
+    --color_Ragonessi: #FFE400;
+    --color_PabloVI: #E0FF00;
+    --color_Fatima: #9EFF00;
+    --color_MariaAuxiliadora: #00FF70;
+    --color_Centro: #004DFF;
+    --color_SanCarlos: #9300FF;
+    --color_Hospital: #FF00EC;
+    --color_Guanenta: #FF0083;
+    --color_Almendros1: #523838;
+    --color_Almendros2: #A19B9B;
+    --color_LaGruta: #5E276A;
+    --color_ElBosque: #111250;
+    --color_CarlosMartinesSilva: #4A1150;
+    --color_SanAntonio: #501111;
+    --color_ElVergel: #8B0000;
+    --color_ElCementerio: #8B2800;
+    --color_RojaEspinilla: #8B7200;
+    --color_Industrial: #728B00;
+    --color_Coovip: #3D8B00;
+    --color_ViaAeuropuertoLosPozos: #008B5B;
+    --color_Acasias: #00678B;
+    --color_CoviladosdelFonce: #140180;
+    --color_Cementos: #6F0180;
+    --color_VillasDeMochuelo: #063D31;
+    --background-color: rgb(15, 17, 27);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--background-color);
+}
+.title_grafico{
+    margin-top: 100px;
+    margin-bottom: 20vh;
+    text-align: center;
+    color: #fff;
+    font-family: 'Comfortaa';
+}
+.container_grafico{
+    width: 700px;
+    height: 550px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.grafico{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background-image: conic-gradient(var(--color_TorresdelCastillo) 2.08%,
+                                    var(--color_JoséAntonioGalán)2.08% 8.33%,
+                                    var(--color_SagradaFamilia)8.33% 12.49%,
+                                    var(--color_VillaOlimpica)12.49% 20.82%,
+                                    var(--color_SanMartin)20.82% 24.98%,
+                                    var(--color_Santander)24.98% 29.14%,
+                                    var(--color_PlazaDeFerias)29.14% 33.3%,
+                                    var(--color_Fatima)33.3% 35.38% ,
+                                    var(--color_Centro)35.38% 64.54%,
+                                    var(--color_Almendros2)64.54% 66.62%,
+                                    var(--color_ElBosque)66.62% 68.7%,
+                                    var(--color_SanAntonio)68.7% 70.78%,
+                                    var(--color_ElVergel)70.78% 81.2%,
+                                    var(--color_ElCementerio)81.2% 83.28%,
+                                    var(--color_Industrial)83.28% 85.36%,
+                                    var(--color_Coovip)85.36% 100%);
+    box-shadow: 1px 1px 5px 1px rgb(255, 255, 255);
+}   
+.leyenda_a11{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    
+}
+[class^="color_"]{
+    width: 15px;
+    height: 15px;
+    background-color: var(--color_TorresdelCastillo);
+    margin-right: 8px;
+    border-radius: 3px;
+}
+.color_JoséAntonioGalán{
+    background-color: var(--color_JoséAntonioGalán);
+}
+.color_LaPlaya{
+    background-color: var(--color_LaPlaya);
+}
+.color_ElMalecon{
+    background-color: var(--color_ElMalecon);
+}
+.color_SagradaFamilia{
+    background-color: var(--color_SagradaFamilia);
+}
+.color_SanMartin{
+    background-color: var(--color_SanMartin);
+}
+.color_Santander{
+    background-color: var(--color_Santander);
+}
+.color_TerminalDeTransporte{
+    background-color: var(--color_TerminalDeTransporte);
+}
+.color_Carcel{
+    background-color: var(--color_Carcel);
+}
+.color_Porvenir1{
+    background-color: var(--color_Porvenir1);
+}
+.color_Porvenir2{
+    background-color: var(--color_Porvenir2);
+}
+.color_PlazaDeFerias{
+    background-color: var(--color_PlazaDeFerias);
+}
+.color_BellaIsla{
+    background-color: var(--color_BellaIsla);
+}
+.color_ParqueElGallineral{
+    background-color: var(--color_ParqueElGallineral);
+}
+.color_NuevoPabloVI{
+    background-color: var(--color_NuevoPabloVI);
+}
+.color_AltosDelGallineral{
+    background-color: var(--color_AltosDelGallineral);
+}
+.color_Altamira{
+    background-color: var(--color_Altamira);
+}
+.color_Ragonessi{
+    background-color: var(--color_Ragonessi);
+}
+.color_PabloVI{
+    background-color: var(--color_PabloVI);
+}
+.color_Fatima{
+    background-color: var(--color_Fatima);
+}
+.color_MariaAuxiliadora{
+    background-color: var(--color_MariaAuxiliadora);
+}
+.color_Centro{
+    background-color: var(--color_Centro);
+}
+.color_SanCarlos{
+    background-color: var(--color_SanCarlos);
+}
+.color_Hospital{
+    background-color: var(--color_Hospital);
+}
+.color_Guanenta{
+    background-color: var(--color_Guanenta);
+}
+.color_Almendros1{
+    background-color: var(--color_Almendros1);
+}
+.color_Almendros2{
+    background-color: var(--color_Almendros2);
+}
+.color_LaGruta{
+    background-color: var(--color_LaGruta);
+}
+.color_ElBosque{
+    background-color: var(--color_ElBosque);
+}
+.color_CarlosMartinesSilva{
+    background-color: var(--color_CarlosMartinesSilva);
+}
+.color_SanAntonio{
+    background-color: var(--color_SanAntonio);
+}
+.color_ElVergel{
+    background-color: var(--color_ElVergel);
+}
+.color_ElCementerio{
+    background-color: var(--color_ElCementerio);
+}
+.color_RojaEspinilla{
+    background-color: var(--color_RojaEspinilla);
+}
+.color_Industrial{
+    background-color: var(--color_Industrial);
+}
+.color_Covid{
+    background-color: var(--color_Covid);
+}
+.color_ViaAeuropuertoLosPozos{
+    background-color: var(--color_ViaAeuropuertoLosPozos);
+}
+.color_Acasias{
+    background-color: var(--color_Acasias);
+}
+.color_CoviladosdelFonce{
+    background-color: var(--color_CoviladosdelFonce);
+}
+.color_Cementos{
+    background-color: var(--color_Cementos);
+}
+.color_VillasDeMochuelo{
+    background-color: var(--color_VillasDeMochuelo);
+}
+.social{
+    color: #fff;
+    font-family: 'Comfortaa';
+    line-height: 1.6;
+}
+.total{
+    color: #fff;
+    font-family: 'Comfortaa';
+    padding: 10px;
+    border-radius: 3px;
+    background-color: rgb(30, 50, 70);
+}
+
+.container_leyenda{
+    margin-left: 10vh;
+}
+
+
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 1em 2.5em;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: #a1adfb;
+    background-color: #c1c9fc;
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #c1c9fc;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
+
+   .btn a{
+    text-decoration: none;
+    color: #000000;
+   }
