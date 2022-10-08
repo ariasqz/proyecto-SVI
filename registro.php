@@ -4,18 +4,19 @@ require 'data.php';
 $message = '';
 
 
-if (!empty($_POST['nombre']) && !empty($_POST['telefono']) && !empty($_POST['direccion']) && !empty($_POST['documento']) && !empty($_POST['mensaje'])) {
-    $sql = "INSERT INTO datos_usuarios (nombre, telefono, direccion, documento, mensaje) VALUES (:nombre, :telefono, :direccion, :documento, :mensaje)";
+if (!empty($_POST['nombre']) && !empty($_POST['telefono']) && !empty($_POST['direccion']) && !empty($_POST['documento']) && !empty($_POST['fecha']) && !empty($_POST['mensaje'])) {
+    $sql = "INSERT INTO datos_usuarios (nombre, telefono, direccion, documento, fecha, mensaje) VALUES (:nombre, :telefono, :direccion, :documento, :fecha, :mensaje)";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(':nombre', $_POST['nombre']);
     $stmt->bindParam(':telefono', $_POST['telefono']);
     $stmt->bindParam(':direccion', $_POST['direccion']);
     $stmt->bindParam(':documento', $_POST['documento']);
+    $stmt->bindParam(':fecha', $_POST['fecha']);
     $stmt->bindParam(':mensaje', $_POST['mensaje']);
 
     if ($stmt->execute()) {
         $message = 'Datos guardados exitosamente';
-        header('location: registro.php');
+        header('location: menu.html');
     } else {
         $message = 'error';
     }
@@ -71,6 +72,13 @@ if (!empty($_POST['nombre']) && !empty($_POST['telefono']) && !empty($_POST['dir
                             <span style="transition-delay:0ms">D</span><span style="transition-delay:50ms">o</span><span style="transition-delay:100ms">c</span><span style="transition-delay:150ms">u</span><span style="transition-delay:200ms">m</span><span style="transition-delay:250ms">e</span><span style="transition-delay:300ms">n</span><span style="transition-delay:350ms">t</span><span style="transition-delay:400ms">o</span>
                         </label>
                     </div>
+                    <div class="form-control">
+                        <input type="text" name="fecha" required>
+                        <label>
+                            <span style="transition-delay:0ms">F</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">c</span><span style="transition-delay:150ms">h</span><span style="transition-delay:200ms">a</span><span style="transition-delay:250ms"><span></span>del</span><span style="transition-delay:300ms"><span></span>caso</span><span style="transition-delay:350ms"><span></span>(dia/mes/año)</span>
+                        </label>
+                    </div>
+
                     <p class="block">
                         <label>
                             <span>Descripcion del caso</span>
@@ -99,7 +107,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['telefono']) && !empty($_POST['dir
                     <div class="card-footer">
                         <span class="text-title">SVI</span>
                         <div class="card-button">
-                            <span> <i class="fa-solid fa-arrow-left"> volver</i></span>
+                            <span> <i class="fa-solid fa-arrow-left"><a href="menu.html">   volver</a></i></span>
                         </div>
                     </div>
                 </div>
