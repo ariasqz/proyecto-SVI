@@ -515,3 +515,192 @@ ul.social-network li a {
 	font-size:12px;
 	text-shadow:none;
 }
+
+:root{
+  --color_TorresdelCastillo: #3b5998;
+  --color_JoséAntonioGalán: #00acce;
+  --color_LaPlaya: #e95950;
+  --color_ElMalecon: #c8232c;
+  --color_SagradaFamilia: #008000;
+  --color_VillaOlimpica: #B51FD0;
+  --color_SanMartin: #500AE5;
+  --color_Santander: #3A3741;
+  --color_TerminalDeTransporte: #BA54B4;
+  --color_Carcel: #54BA71;
+  --color_Porvenir1: #54B8BA;
+  --color_Porvenir2: #AFBA54;
+  --color_PlazaDeFerias: #BA5454;
+  --color_BellaIsla: #5456BA;
+  --color_ParqueElGallineral: #FF0000;
+  --color_NuevoPabloVI: #000000;
+  --color_AltosDelGallineral: #FFFFFF;
+  --color_Altamira: #FF8000;
+  --color_Ragonessi: #FFE400;
+  --color_PabloVI: #E0FF00;
+  --color_Fatima: #9EFF00;
+  --color_MariaAuxiliadora: #00FF70;
+  --color_Centro: #004DFF;
+  --color_SanCarlos: #9300FF;
+  --color_Hospital: #FF00EC;
+  --color_Guanenta: #FF0083;
+  --color_Almendros1: #523838;
+  --color_Almendros2: #A19B9B;
+  --color_LaGruta: #5E276A;
+  --color_ElBosque: #111250;
+  --color_CarlosMartinesSilva: #4A1150;
+  --color_SanAntonio: #501111;
+  --color_ElVergel: #8B0000;
+  --color_ElCementerio: #8B2800;
+  --color_RojaEspinilla: #8B7200;
+  --color_Industrial: #728B00;
+  --color_Coovip: #3D8B00;
+  --color_ViaAeuropuertoLosPozos: #008B5B;
+  --color_Acasias: #00678B;
+  --color_CoviladosdelFonce: #140180;
+  --color_Cementos: #6F0180;
+  --color_VillasDeMochuelo: #063D31;
+  --background-color: rgb(15, 17, 27);
+}
+
+.leyenda_a11{
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  
+}
+[class^="color_"]{
+  width: 15px;
+  height: 15px;
+  background-color: var(--color_TorresdelCastillo);
+  margin-right: 8px;
+  border-radius: 3px;
+}
+.color_JoséAntonioGalán{
+  background-color: var(--color_JoséAntonioGalán);
+}
+.color_LaPlaya{
+  background-color: var(--color_LaPlaya);
+}
+.color_ElMalecon{
+  background-color: var(--color_ElMalecon);
+}
+.color_SagradaFamilia{
+  background-color: var(--color_SagradaFamilia);
+}
+.color_SanMartin{
+  background-color: var(--color_SanMartin);
+}
+.color_Santander{
+  background-color: var(--color_Santander);
+}
+.color_TerminalDeTransporte{
+  background-color: var(--color_TerminalDeTransporte);
+}
+.color_Carcel{
+  background-color: var(--color_Carcel);
+}
+.color_Porvenir1{
+  background-color: var(--color_Porvenir1);
+}
+.color_Porvenir2{
+  background-color: var(--color_Porvenir2);
+}
+.color_PlazaDeFerias{
+  background-color: var(--color_PlazaDeFerias);
+}
+.color_BellaIsla{
+  background-color: var(--color_BellaIsla);
+}
+.color_ParqueElGallineral{
+  background-color: var(--color_ParqueElGallineral);
+}
+.color_NuevoPabloVI{
+  background-color: var(--color_NuevoPabloVI);
+}
+.color_AltosDelGallineral{
+  background-color: var(--color_AltosDelGallineral);
+}
+.color_Altamira{
+  background-color: var(--color_Altamira);
+}
+.color_Ragonessi{
+  background-color: var(--color_Ragonessi);
+}
+.color_PabloVI{
+  background-color: var(--color_PabloVI);
+}
+.color_Fatima{
+  background-color: var(--color_Fatima);
+}
+.color_MariaAuxiliadora{
+  background-color: var(--color_MariaAuxiliadora);
+}
+.color_Centro{
+  background-color: var(--color_Centro);
+}
+.color_SanCarlos{
+  background-color: var(--color_SanCarlos);
+}
+.color_Hospital{
+  background-color: var(--color_Hospital);
+}
+.color_Guanenta{
+  background-color: var(--color_Guanenta);
+}
+.color_Almendros1{
+  background-color: var(--color_Almendros1);
+}
+.color_Almendros2{
+  background-color: var(--color_Almendros2);
+}
+.color_LaGruta{
+  background-color: var(--color_LaGruta);
+}
+.color_ElBosque{
+  background-color: var(--color_ElBosque);
+}
+.color_CarlosMartinesSilva{
+  background-color: var(--color_CarlosMartinesSilva);
+}
+.color_SanAntonio{
+  background-color: var(--color_SanAntonio);
+}
+.color_ElVergel{
+  background-color: var(--color_ElVergel);
+}
+.color_ElCementerio{
+  background-color: var(--color_ElCementerio);
+}
+.color_RojaEspinilla{
+  background-color: var(--color_RojaEspinilla);
+}
+.color_Industrial{
+  background-color: var(--color_Industrial);
+}
+.color_Covid{
+  background-color: var(--color_Covid);
+}
+.color_ViaAeuropuertoLosPozos{
+  background-color: var(--color_ViaAeuropuertoLosPozos);
+}
+.color_Acasias{
+  background-color: var(--color_Acasias);
+}
+.color_CoviladosdelFonce{
+  background-color: var(--color_CoviladosdelFonce);
+}
+.color_Cementos{
+  background-color: var(--color_Cementos);
+}
+.color_VillasDeMochuelo{
+  background-color: var(--color_VillasDeMochuelo);
+}
+.social{
+  color: #000;
+  font-family: 'Comfortaa';
+  line-height: 1.6;
+}
+
+.container_leyenda{
+  margin-left: 10vh;
+}
