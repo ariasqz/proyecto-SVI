@@ -1,17 +1,17 @@
 :root{
-    --color_TorresdelCastillo: #3b5998;
-    --color_JoséAntonioGalán: #00acce;
-    --color_LaPlaya: #e95950;
-    --color_ElMalecon: #c8232c;
-    --color_SagradaFamilia: #008000;
-    --color_VillaOlimpica: #B51FD0;
-    --color_SanMartin: #500AE5;
-    --color_Santander: #3A3741;
+    --color_TorresdelCastillo: #ff6961;
+    --color_JoséAntonioGalán: #77dd77;
+    --color_LaPlaya: #A9CCE3;
+    --color_ElMalecon: #A3E4D7;
+    --color_SagradaFamilia: #fdfd96;
+    --color_VillaOlimpica: #84b6f4;
+    --color_SanMartin: #fdcae1;
+    --color_Santander: #ffda9e;
     --color_TerminalDeTransporte: #BA54B4;
     --color_Carcel: #54BA71;
     --color_Porvenir1: #54B8BA;
     --color_Porvenir2: #AFBA54;
-    --color_PlazaDeFerias: #BA5454;
+    --color_PlazaDeFerias: #fabfb7;
     --color_BellaIsla: #5456BA;
     --color_ParqueElGallineral: #FF0000;
     --color_NuevoPabloVI: #000000;
@@ -19,23 +19,23 @@
     --color_Altamira: #FF8000;
     --color_Ragonessi: #FFE400;
     --color_PabloVI: #E0FF00;
-    --color_Fatima: #9EFF00;
+    --color_Fatima: #b0f2c2;
     --color_MariaAuxiliadora: #00FF70;
-    --color_Centro: #004DFF;
+    --color_Centro: #6a9eda;
     --color_SanCarlos: #9300FF;
     --color_Hospital: #FF00EC;
     --color_Guanenta: #FF0083;
     --color_Almendros1: #523838;
-    --color_Almendros2: #A19B9B;
+    --color_Almendros2: #c5d084;
     --color_LaGruta: #5E276A;
-    --color_ElBosque: #111250;
+    --color_ElBosque: #ededaf;
     --color_CarlosMartinesSilva: #4A1150;
-    --color_SanAntonio: #501111;
-    --color_ElVergel: #8B0000;
-    --color_ElCementerio: #8B2800;
+    --color_SanAntonio: #f9a59a;
+    --color_ElVergel: #95fab9;
+    --color_ElCementerio: #bc98f3;
     --color_RojaEspinilla: #8B7200;
-    --color_Industrial: #728B00;
-    --color_Coovip: #3D8B00;
+    --color_Industrial: #eef6b0;
+    --color_Coovip: #f5fac1;
     --color_ViaAeuropuertoLosPozos: #008B5B;
     --color_Acasias: #00678B;
     --color_CoviladosdelFonce: #140180;
@@ -239,6 +239,49 @@ body{
 .container_leyenda{
     margin-left: 10vh;
 }
+* {
+    /* Change your font family */
+    font-family: 'Comfortaa';
+}
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 252, 176, 0.15);
+}
+
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ffffff;
+}
+
+.content-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
 
 
 .btn {
@@ -250,7 +293,7 @@ body{
     border-radius: 6em;
     transition: all .2s;
     border: none;
-    font-family: inherit;
+    font-family: 'Comfortaa';
     font-weight: 500;
     color: #a1adfb;
     background-color: #c1c9fc;

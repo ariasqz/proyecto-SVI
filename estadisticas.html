@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVI</title>
+    <title>Violencia Intrafamiliar</title>
     <link rel="stylesheet" href="css/style-est.css">
 </head>
 
 <body>
-    <h1 class="title_grafico">Violencia Intrafamiliar</h1>
+    <h1 class="title_grafico"> Estadisticas</h1>
+    <h1 class="title_grafico">Afectación En Sectores</h1>
     <section class="container_grafico">
         <div class="grafico"></div>
         <div class="container_leyenda">
@@ -85,7 +86,168 @@
         </div>
     </section>
 </body>
-<button class="btn">
-    <a href="menu.html">Volver</a> 
-</button>
+<body>
+    <h1 class="title_grafico">Violencia En La Semana</h1>
+    <canvas id="myChart" width="700" height="200"></canvas>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'],
+            datasets: [{
+                label: '# Violencia Presentada En La Semana',
+                data: [9, 9, 13, 10, 9, 5, 16],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 125, 0, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255, 99, 132, 1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)',
+                    'rgba(255, 99, 132, 1)'
+                ],
+                borderWidth: 2
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+    </script>
+</body>
+
+<h1 class="title_grafico">Tablas</h1>
+<body>
+    <center>
+    <left>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th align="center">Día de Mayor afectación</th>
+            <th align="center">Hora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">Lunes</td>
+            <td align="center">9</td>
+          </tr>
+          <tr>
+            <td align="center">Martes</td>
+            <td align="center">9</td>
+          </tr>
+          <tr>
+            <td align="center">Miércoles</td>
+            <td align="center">13</td>
+          </tr>
+          <tr>
+            <td align="center">Jueves</td>
+            <td align="center">10</td>
+          </tr>
+          <tr>
+            <td align="center">Viernes</td>
+            <td align="center">9</td>
+          </tr>
+          <tr>
+            <td align="center">Sábado</td>
+            <td align="center">5</td>
+          </tr>
+          <tr>
+            <td align="center">Domingo</td>
+            <td align="center">16</td>
+          </tr>
+        </tbody>
+      </table>
+    </left>
+    </center>
+</body><br>
+<body>
+    <center>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th align="center">Caso</th>
+            <th align="center">Hora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">35</td>
+            <td align="center">Riña entre Compañeros</td>
+          </tr>
+          <tr>
+            <td align="center">3</td>
+            <td align="center">Riña entre Hermanos</td>
+          </tr>
+          <tr>
+            <td align="center">4</td>
+            <td align="center">Riñas</td>
+          </tr>
+          <tr>
+            <td align="center">5</td>
+            <td align="center">Riña entre Esposos</td>
+          </tr>
+          <tr>
+            <td align="center">1</td>
+            <td align="center">Riña Hijo-Padre</td>
+          </tr>
+          <tr>
+            <td align="center">10</td>
+            <td align="center">Riña Hijo-Madre</td>
+          </tr>
+          <tr>
+            <td align="center">13</td>
+            <td align="center">Por Establecer</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+</body><br>
+<body>
+    <center>
+    <table class="content-table">
+        <thead>
+          <tr>
+            <th align="center">Casos</th>
+            <th align="center">Tipo</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="center">50</td>
+            <td align="center">Contundentes</td>
+          </tr>
+          <tr>
+            <td align="center">3</td>
+            <td align="center">Arma Blanca Cortopunzantes</td>
+          </tr>
+          <tr>
+            <td align="center">18</td>
+            <td align="center">Sin Empleo De Arma</td>
+          </tr>
+        </tbody>
+      </table>
+    </center>
+</body><br>
 </html>
+
+
+
+
