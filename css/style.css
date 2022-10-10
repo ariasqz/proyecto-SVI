@@ -306,7 +306,7 @@ p {
 }
 
 
-button {
+.boton_registro {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   padding: 10px 30px;
@@ -319,32 +319,32 @@ button {
   border-radius: 50px;
 }
 
-button:hover {
+.boton_registro:hover {
   letter-spacing: 0.25em;
   background: #5361a0;
   color: #5361a0;
   box-shadow: 0 0 45px #5361a0;
 }
 
-button::before {
+.boton_registro::before {
   content: '';
   position: absolute;
   inset: 2px;
 }
 
-button span {
+.boton_registro span {
   position: relative;
   z-index: 1;
   color: #fff;
 }
 
-button i {
+.boton_registro i {
   position: absolute;
   inset: 0;
   display: block;
 }
 
-button i::before {
+.boton_registro i::before {
   content: '';
   position: absolute;
   border: 2px solid #c1c9fc;
@@ -357,12 +357,12 @@ button i::before {
   transition: 0.5s;
 }
 
-button:hover i::before {
+.boton_registro:hover i::before {
   width: 20px;
   left: 20%;
 }
 
-button i::after {
+.boton_registro i::after {
   content: '';
   position: absolute;
   border: 2px solid #c1c9fc;
@@ -375,7 +375,81 @@ button i::after {
   transition: 0.5s;
 }
 
-button:hover i::after {
+.boton_registro:hover i::after {
+  width: 20px;
+  left: 80%;
+}
+
+.boton_mapa {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+  position: relative;
+  font-size: 17px;
+  background: #c1c9fc;
+  border: none;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.boton_mapa:hover {
+  letter-spacing: 0.25em;
+  background: #5361a0;
+  color: #5361a0;
+  box-shadow: 0 0 45px #5361a0;
+}
+
+.boton_mapa::before {
+  content: '';
+  position: absolute;
+  inset: 2px;
+}
+
+.boton_mapa span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.boton_mapa i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.boton_mapa i::before {
+  content: '';
+  position: absolute;
+  border: 2px solid #c1c9fc;
+  width: 7px;
+  height: 4px;
+  top: -3.5px;
+  left: 80%;
+  
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.boton_mapa:hover i::before {
+  width: 20px;
+  left: 20%;
+}
+
+.boton_mapa i::after {
+  content: '';
+  position: absolute;
+  border: 2px solid #c1c9fc;
+  width: 7px;
+  height: 4px;
+  bottom: -3.5px;
+  left: 20%;
+
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+
+.boton_mapa:hover i::after {
   width: 20px;
   left: 80%;
 }
