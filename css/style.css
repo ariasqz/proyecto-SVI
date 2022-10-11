@@ -223,7 +223,20 @@ p {
   line-height: 28px;
 }
 
-
+.up{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #8191f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 .lds-ripple {
