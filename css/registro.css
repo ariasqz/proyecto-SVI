@@ -119,7 +119,7 @@ ul {
     background: none;
     outline: 0;
     color: #bcc8ff;
-    border-bottom: 1px solid #d63030;
+    border-bottom: 1px solid #e68888;
 }
 
 
@@ -245,8 +245,8 @@ svg {
 }
 
 .card-button:hover {
-    border: 1px solid #98be5a;
-    background-color: #68e64f;
+    border: 1px solid #879cf7;
+    background-color: #3ea2ff;
 }
 
 

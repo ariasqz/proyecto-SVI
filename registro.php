@@ -75,7 +75,7 @@ if (!empty($_POST['nombre']) && !empty($_POST['telefono']) && !empty($_POST['dir
                     <div class="form-control">
                         <input type="text" name="fecha" required>
                         <label>
-                            <span style="transition-delay:0ms">F</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">c</span><span style="transition-delay:150ms">h</span><span style="transition-delay:200ms">a</span><span style="transition-delay:250ms"><span></span>del</span><span style="transition-delay:300ms"><span></span>caso</span><span style="transition-delay:350ms"><span></span>(dia/mes/año)</span>
+                            <span style="transition-delay:0ms">F</span><span style="transition-delay:50ms">e</span><span style="transition-delay:100ms">c</span><span style="transition-delay:150ms">h</span><span style="transition-delay:200ms">a</span><span style="transition-delay:250ms"><span></span>del</span><span style="transition-delay:300ms"><span></span>caso</span>
                         </label>
                     </div>
 
