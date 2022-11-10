@@ -11,7 +11,7 @@ body,html {
     width: 100vw;
     height: 100vh;
     position: fixed;
-    background: #fff;
+    background: #C7BAA3;
     z-index: 999;
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ body,html {
 }
 #portfolio div h1 {
     font-size:40px;
-    background-image: linear-gradient(to left, #8191f2 0%, #8191f2 100%);
+    background-image: linear-gradient(to left, #A5A187 0%, #A5A187 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
@@ -125,7 +125,7 @@ body,html {
 
 #work h2 {
     font-size:40px;
-    background-image: linear-gradient(to left, #8191f2 0%, #8191f2 100%);
+    background-image: linear-gradient(to left, #A5A187 0%, #A5A187 100%);
     -webkit-background-clip:text;
     background-clip:text;
     -webkit-text-fill-color: transparent;
