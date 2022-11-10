@@ -25,7 +25,7 @@ h1 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-  color: #8191f2;
+  color: #00BDD0;
 }
 
 h1::after {
@@ -33,7 +33,7 @@ h1::after {
   content: "";
   height: 2px;
   width: 150px;
-  background: #8191f2;
+  background: #00BDD0;
   margin: 5px auto 40px;
 }
 
@@ -114,7 +114,7 @@ section {
   height: auto;
   padding-top: 190px;
   padding-bottom: 200px;
-  color: #c1c9fc;
+  color: white;
 }
 
 .head-main {
@@ -153,11 +153,11 @@ section {
 .main__container--row-tex-center-icons li a{
   display: block;
   text-decoration: none;
-  color:#c1c9fc;
+  color:#A5F7FF;
 }
 
 .main__container--row-tex-center-icons li a:hover{
-  color:#8191f2;
+  color:#00CDE1;
   transition: all .3s;
 }
 
@@ -287,7 +287,7 @@ p {
 }
 
 .loader {
-  background: #8191f2;
+  background: #00CDE1;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -313,17 +313,17 @@ p {
   transition: 0.5s;
   position: relative;
   font-size: 17px;
-  background: #c1c9fc;
+  background: #A5F7FF;
   border: none;
-  color: #fff;
+  
   border-radius: 50px;
 }
 
 .boton_registro:hover {
   letter-spacing: 0.25em;
-  background: #5361a0;
-  color: #5361a0;
-  box-shadow: 0 0 45px #5361a0;
+  background: #00CDE1;
+  color: #00CDE1;
+  box-shadow: 0 0 45px #00CDE1;
 }
 
 .boton_registro::before {
@@ -335,7 +335,7 @@ p {
 .boton_registro span {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #000;
 }
 
 .boton_registro i {
@@ -347,7 +347,7 @@ p {
 .boton_registro i::before {
   content: '';
   position: absolute;
-  border: 2px solid #c1c9fc;
+  border: 2px solid #00CDE1;
   width: 7px;
   height: 4px;
   top: -3.5px;
@@ -365,7 +365,7 @@ p {
 .boton_registro i::after {
   content: '';
   position: absolute;
-  border: 2px solid #c1c9fc;
+  border: 2px solid #00CDE1;
   width: 7px;
   height: 4px;
   bottom: -3.5px;
@@ -395,9 +395,9 @@ p {
 
 .boton_mapa:hover {
   letter-spacing: 0.25em;
-  background: #5361a0;
-  color: #5361a0;
-  box-shadow: 0 0 45px #5361a0;
+  background: #00CDE1;
+  color: #00CDE1;
+  box-shadow: 0 0 45px #00CDE1;
 }
 
 .boton_mapa::before {
@@ -409,7 +409,7 @@ p {
 .boton_mapa span {
   position: relative;
   z-index: 1;
-  color: #fff;
+  color: #000;
 }
 
 .boton_mapa i {
@@ -421,7 +421,7 @@ p {
 .boton_mapa i::before {
   content: '';
   position: absolute;
-  border: 2px solid #c1c9fc;
+  border: 2px solid #00CDE1;
   width: 7px;
   height: 4px;
   top: -3.5px;
@@ -439,7 +439,7 @@ p {
 .boton_mapa i::after {
   content: '';
   position: absolute;
-  border: 2px solid #c1c9fc;
+  border: 2px solid #00CDE1;
   width: 7px;
   height: 4px;
   bottom: -3.5px;
