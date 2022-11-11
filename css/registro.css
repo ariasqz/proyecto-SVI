@@ -187,13 +187,14 @@ button:active {
 }
 
 .card-img {
-    height: 40%;
-    background-image: url('../img/pruebaregistro.jpg');
+    height: 50%;
+    background-image: url('../img/registrohor.png');
     background-size: cover;
-    background-position: center center;
+    background-position: 15% 10%;
     width: 100%;
     border-radius: .5rem;
     transition: .3s ease;
+
 }
 
 .card-info {
